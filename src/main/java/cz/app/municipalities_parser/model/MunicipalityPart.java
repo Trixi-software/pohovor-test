@@ -16,6 +16,7 @@ public class MunicipalityPart {
     @Column(nullable = false)
     private String name;
 
+    // TODO poznamka
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "municipality_id")
     private Municipality municipality;
